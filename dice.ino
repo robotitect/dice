@@ -21,6 +21,22 @@ SevSeg display;
 
 void setup()
 {
+  cli();  //stop interrupts
+  //set timer1 interrupt at 1kHz
+  TCCR1A = 0;// set entire TCCR1A register to 0
+  TCCR1B = 0;// same for TCCR1B
+  TCNT1  = 0;//initialize counter value to 0
+  // set timer count for 100Hz increments
+  OCR1A = 199;// = (16*10^5) / (1000*8) - 1
+  //had to use 16 bit timer1 for this bc 1999>255, but could switch to timers 0 or 2 with larger prescaler
+  // turn on CTC mode
+  TCCR1B |= (1 << WGM12);
+  // Set CS11 bit for 8 prescaler
+  TCCR1B |= (1 << CS11);  
+  // enable timer compare interrupt
+  TIMSK1 |= (1 << OCIE1A);
+  sei();  //allow interrupts
+  
   Serial.begin(38400);
   Serial.println("Hello World");
 
@@ -34,34 +50,28 @@ void setup()
   display.setBrightness(90);
 
   randomSeed(digitalRead(0));
+
+  display.setNumber(displayValue, 2);
+  display.refreshDisplay();
 }
 
 void loop()
 {
   display.setNumber(displayValue, 2);
-  display.refreshDisplay();
 
   int potentiometerValue = analogRead(POTENTIOMETER);
   Serial.print(potentiometerValue);
   Serial.print(": ");
-
-  display.refreshDisplay();
-
+  
   int mappedPotValue = map(potentiometerValue, MIN_POT, MAX_POT, MIN_RANGE, MAX_RANGE);
   Serial.print(mappedPotValue);
   Serial.print("; Tilt: ");
 
-  display.refreshDisplay();
-
   boolean tiltValue = !digitalRead(TILT_SENSOR);
   Serial.print(tiltValue);
 
-  display.refreshDisplay();
-
   Serial.print("; Gen #: ");
   Serial.println(displayValue / 100);
-
-  display.refreshDisplay();
 
   if(tiltValue)
   {
@@ -73,23 +83,22 @@ void loop()
     digitalWrite(LED, LOW);
   }
 
-  display.refreshDisplay();
-
   displayValue -= (displayValue % 100);
   displayValue += mappedPotValue;
-
-  display.refreshDisplay();
 }
 
 void generateNumber(int range)
-{
-  display.refreshDisplay();
-  
+{ 
   int randomNumber = random(range + 1);
   Serial.print("Generated Number: ");
   Serial.println(randomNumber);
 
   displayValue = randomNumber*100 + range;
+}
 
+ISR(TIMER1_COMPA_vect) // refresh display @ 100Hz
+{
   display.refreshDisplay();
 }
+
+
