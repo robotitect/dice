@@ -7267,18 +7267,10 @@ Distributor Buerklin, 11G810</description>
 <wire x1="40.64" y1="50.8" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 <junction x="40.64" y="38.1"/>
 <pinref part="D1" gate="D1" pin="C"/>
-<wire x1="55.88" y1="38.1" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
 <junction x="55.88" y="38.1"/>
-<pinref part="B1" gate="G$1" pin="GND@1"/>
-<wire x1="55.88" y1="35.56" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="35.56" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
-<junction x="55.88" y="35.56"/>
-<pinref part="B1" gate="G$1" pin="GND@0"/>
-<wire x1="55.88" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="V1" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="15.24" x2="55.88" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="15.24" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
-<junction x="55.88" y="33.02"/>
+<wire x1="55.88" y1="15.24" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
 <label x="50.8" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>

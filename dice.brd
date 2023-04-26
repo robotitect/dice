@@ -27,7 +27,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -175,8 +175,8 @@
 <wire x1="0" y1="0" x2="0" y2="55.88" width="0.3048" layer="20"/>
 <wire x1="53.34" y1="55.88" x2="53.34" y2="0" width="0.3048" layer="20"/>
 <wire x1="0" y1="55.88" x2="53.34" y2="55.88" width="0.3048" layer="20"/>
-<text x="12.7" y="43.18" size="1.778" layer="1" font="vector" rot="R90">roll</text>
-<text x="12.7" y="36.83" size="1.778" layer="1" font="vector" rot="R90">hold</text>
+<text x="13.97" y="40.64" size="5.08" layer="1" font="vector" rot="R180">h</text>
+<text x="13.97" y="48.26" size="5.08" layer="1" font="vector" rot="R180">r</text>
 </plain>
 <libraries>
 <library name="SparkFun-Boards" urn="urn:adsk.eagle:library:509">
@@ -2312,29 +2312,14 @@ design rules under a new name.</description>
 </element>
 </elements>
 <signals>
-<signal name="N$2">
-<polygon width="0.3048" layer="1">
-<vertex x="0" y="55.88"/>
-<vertex x="53.34" y="55.88"/>
-<vertex x="53.34" y="0"/>
-<vertex x="0" y="0"/>
-</polygon>
-<polygon width="0.3048" layer="16">
-<vertex x="0" y="55.88"/>
-<vertex x="53.34" y="55.88"/>
-<vertex x="53.34" y="0"/>
-<vertex x="0" y="0"/>
-</polygon>
-</signal>
 <signal name="POT">
 <contactref element="R1" pad="1S"/>
 <contactref element="B1" pad="A0"/>
 <wire x1="50.8" y1="40.64" x2="50.8" y2="37.5356625" width="0.3048" layer="1"/>
-<wire x1="49.403" y1="16.383" x2="40.64" y2="7.62" width="0.3048" layer="1"/>
+<wire x1="40.64" y1="7.62" x2="49.403" y2="16.383" width="0.3048" layer="1"/>
 <wire x1="50.8" y1="37.5356625" x2="49.403" y2="36.1386625" width="0.3048" layer="1"/>
 <wire x1="49.403" y1="36.1386625" x2="49.403" y2="16.383" width="0.3048" layer="1"/>
-<wire x1="40.64" y1="7.62" x2="19.05" y2="7.62" width="0.3048" layer="1"/>
-<wire x1="19.05" y1="7.62" x2="17.93" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="17.93" y1="7.62" x2="40.64" y2="7.62" width="0.3048" layer="1"/>
 </signal>
 <signal name="VIBR">
 <contactref element="B1" pad="A2"/>
@@ -2504,22 +2489,25 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1E"/>
 <contactref element="B1" pad="GND@2"/>
 <contactref element="D1" pad="K"/>
-<contactref element="B1" pad="GND@1"/>
-<contactref element="B1" pad="GND@0"/>
 <contactref element="V1" pad="2"/>
-<wire x1="50.8" y1="30.48" x2="50.8" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="41.91" x2="50.8" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="49.53" x2="16.51" y2="41.91" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="38.1" x2="16.51" y2="41.91" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="16.51" x2="7.62" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="17.93" y1="2.62" x2="2.54" y2="16.51" width="0" layer="19" extent="1-1"/>
+<polygon width="0.3048" layer="1">
+<vertex x="0" y="55.88"/>
+<vertex x="53.34" y="55.88"/>
+<vertex x="53.34" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
+<polygon width="0.3048" layer="16">
+<vertex x="0" y="55.88"/>
+<vertex x="53.34" y="55.88"/>
+<vertex x="53.34" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
 </signal>
 <signal name="SW">
 <contactref element="S1" pad="1"/>
 <contactref element="B1" pad="A5"/>
-<wire x1="50.8" y1="53.34" x2="43.18" y2="45.72" width="0.3048" layer="1"/>
-<wire x1="43.18" y1="45.72" x2="17.78" y2="45.72" width="0.3048" layer="1"/>
-<wire x1="16.51" y1="45.72" x2="17.78" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="45.72" x2="50.8" y2="53.34" width="0.3048" layer="1"/>
+<wire x1="16.51" y1="45.72" x2="43.18" y2="45.72" width="0.3048" layer="1"/>
 </signal>
 <signal name="D1">
 <contactref element="R2" pad="2"/>
@@ -2539,10 +2527,6 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="3,1,396603174e0d747c"/>
-<approved hash="3,1,9664fc15e52f8f5e"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
