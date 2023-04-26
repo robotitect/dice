@@ -7110,7 +7110,7 @@ Distributor Buerklin, 11G810</description>
 <wire x1="45.72" y1="101.6" x2="45.72" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="LED" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="A4"/>
 <wire x1="40.64" y1="58.42" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
@@ -7161,12 +7161,12 @@ Distributor Buerklin, 11G810</description>
 <wire x1="147.32" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="C" class="0">
+<net name="D" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="D8"/>
-<pinref part="DISP1" gate="G$1" pin="C"/>
-<wire x1="83.82" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="50.8" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="DISP1" gate="G$1" pin="D"/>
+<wire x1="152.4" y1="50.8" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DP" class="0">
@@ -7185,15 +7185,15 @@ Distributor Buerklin, 11G810</description>
 <wire x1="154.94" y1="45.72" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="F" class="0">
+<net name="C" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="*D11"/>
-<wire x1="83.82" y1="43.18" x2="152.4" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="DISP1" gate="G$1" pin="D"/>
-<wire x1="152.4" y1="73.66" x2="152.4" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="43.18" x2="149.86" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="DISP1" gate="G$1" pin="C"/>
+<wire x1="149.86" y1="73.66" x2="149.86" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="G" class="0">
+<net name="F" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="D12"/>
 <wire x1="83.82" y1="40.64" x2="157.48" y2="40.64" width="0.1524" layer="91"/>
@@ -7201,7 +7201,7 @@ Distributor Buerklin, 11G810</description>
 <wire x1="157.48" y1="73.66" x2="157.48" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D" class="0">
+<net name="G" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="D13"/>
 <wire x1="83.82" y1="38.1" x2="160.02" y2="38.1" width="0.1524" layer="91"/>
