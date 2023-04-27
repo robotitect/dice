@@ -7,14 +7,16 @@
 
 const int POTENTIOMETER = A0;
 const int TILT_SENSOR = A2;
-const int LED = A4;
-const int HOLD_SWITCH = A5;
+const int HOLD_SWITCH = A4;
+
+const int LED = A5;
+
 
 const byte NUM_DIGITS = 4;
 const byte DIGIT_PINS[] = {2, 3, 4, 5}; // 1, 2, 3, 4
 
                           // A, B, C, D,  E,  F,  G, DP
-const byte SEGMENT_PINS[] = {6, 7, 8, 9, 10, 11, 12, 13};
+const byte SEGMENT_PINS[] = {13, 11, 9, 7, 6, 12, 10, 8};
 
 int displayValue = 3;
 
