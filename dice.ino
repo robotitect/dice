@@ -15,7 +15,7 @@ const int LED = A5;
 const byte NUM_DIGITS = 4;
 const byte DIGIT_PINS[] = {2, 3, 4, 5}; // 1, 2, 3, 4
 
-                          // A, B, C, D,  E,  F,  G, DP
+                          //  A,  B, C, D, E,  F,  G, DP
 const byte SEGMENT_PINS[] = {13, 11, 9, 7, 6, 12, 10, 8};
 
 int displayValue = 3;
@@ -26,17 +26,18 @@ void setup()
 {
   cli();  // Stop interrupts
   // Set timer1 interrupt at 1kHz
-  TCCR1A = 0;// set entire TCCR1A register to 0
-  TCCR1B = 0;// same for TCCR1B
-  TCNT1  = 0;//initialize counter value to 0
-  // set timer count for 100Hz increments
-  OCR1A = 2002;// = (16*10^5) / (100*8) - 1
-  //had to use 16 bit timer1 for this bc 1999>255, but could switch to timers 0 or 2 with larger prescaler
-  // turn on CTC mode
+  TCCR1A = 0; // Set entire TCCR1A register to 0
+  TCCR1B = 0; // Same for TCCR1B
+  TCNT1  = 0; // Initialize counter value to 0
+  // Set timer count for 100Hz increments
+  OCR1A = 2002; // = (16*10^5) / (100*8) - 1
+  // Had to use 16 bit timer1 for this because 1999>255, 
+  // but could switch to timers 0 or 2 with larger prescaler
+  // Turn on CTC mode
   TCCR1B |= (1 << WGM12);
   // Set CS11 bit for 8 prescaler
   TCCR1B |= (1 << CS11);  
-  // enable timer compare interrupt
+  // Enable timer compare interrupt
   TIMSK1 |= (1 << OCIE1A);
   sei();  //allow interrupts
   
@@ -62,7 +63,8 @@ void setup()
 
 void loop()
 {
-  display.setNumber(displayValue, 2); // Decimal point in the dead center, pretend it's "/"
+  // Decimal point in the dead center, pretend it's "/"
+  display.setNumber(displayValue, 2); 
 
   boolean isHold = !digitalRead(HOLD_SWITCH);
   Serial.print("Holding: ");
@@ -81,8 +83,13 @@ void loop()
     Serial.print("Pot value: ");
     Serial.print(potentiometerValue);
     Serial.print(": ");
-    
-    int mappedPotValue = MAX_RANGE + MIN_RANGE - constrain(map(potentiometerValue, MIN_POT, MAX_POT, MIN_RANGE, MAX_RANGE), MIN_RANGE, MAX_RANGE); // Limit from 1 to 99; turn Right for higher numbers
+
+    // Turn Right for higher numbers
+    // Limit from 1 to 99
+    int mappedPotValue = MAX_RANGE + MIN_RANGE 
+                       - constrain(map(potentiometerValue, MIN_POT, MAX_POT, 
+                                       MIN_RANGE, MAX_RANGE), 
+                                   MIN_RANGE, MAX_RANGE); 
     Serial.print(mappedPotValue);
     Serial.print("; Tilt: ");
   
@@ -118,7 +125,7 @@ void generateNumber(int range)
   displayValue = (randomNumber*100) + range;
 }
 
-ISR(TIMER1_COMPA_vect) // refresh display @ 100Hz
+ISR(TIMER1_COMPA_vect) // Refresh display @ 100Hz
 {
   display.refreshDisplay();
 }
