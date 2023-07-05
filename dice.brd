@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -173,68 +173,6 @@
 <wire x1="0" y1="0" x2="0" y2="55.88" width="0.3048" layer="20"/>
 <wire x1="53.34" y1="55.88" x2="53.34" y2="0" width="0.3048" layer="20"/>
 <wire x1="0" y1="55.88" x2="53.34" y2="55.88" width="0.3048" layer="20"/>
-<circle x="2.54" y="35.56" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="2.54" y="38.1" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="40.64" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="43.18" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="45.72" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="2.54" y="48.26" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="50.8" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="53.34" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="6.858" y="39.37" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="6.858" y="36.83" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="6.858" y="34.29" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="6.858" y="31.75" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="2.54" y="31.75" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="29.21" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="26.67" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="24.13" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="21.59" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="2.54" y="19.05" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="16.51" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="2.54" y="13.97" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="2.54" y="11.43" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="2.54" y="8.89" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="6.858" y="29.21" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="6.858" y="26.67" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="13.97" y="50.8" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="13.97" y="48.26" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="13.97" y="45.72" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="13.97" y="43.18" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="21.59" y="50.8" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="21.59" y="48.26" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="21.59" y="45.72" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="21.59" y="43.18" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="28.702" y="39.37" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="28.702" y="36.83" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="28.702" y="34.29" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="28.702" y="31.75" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="28.702" y="29.21" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="28.702" y="26.67" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="35.56" y="53.34" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="35.56" y="50.8" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="35.56" y="45.72" radius="0.803215625" width="0.381" layer="1"/>
-<circle x="35.56" y="41.91" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="35.56" y="38.1" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="38.735" y="34.29" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="38.735" y="19.05" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="34.29" y="13.97" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="34.036" y="8.89" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="34.036" y="3.81" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="50.8" y="53.34" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="50.8" y="50.8" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="50.8" y="48.26" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="50.8" y="45.72" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="50.8" y="43.18" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="50.8" y="40.64" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="50.8" y="35.56" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="50.8" y="33.02" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="50.8" y="30.48" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="50.8" y="27.94" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="50.8" y="25.4" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="50.8" y="22.86" radius="0.567959375" width="0.381" layer="1"/>
-<circle x="50.8" y="20.32" radius="0.71841875" width="0.381" layer="1"/>
-<circle x="50.8" y="17.78" radius="0.71841875" width="0.381" layer="1"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2145,7 +2083,7 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<param name="layerSetup" value="(1*16)"/>
+<param name="layerSetup" value="1"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="30mil"/>
@@ -2467,22 +2405,12 @@ design rules under a new name.</description>
 <contactref element="D1" pad="K"/>
 <contactref element="V1" pad="2"/>
 <contactref element="B2" pad="GND@2"/>
-<wire x1="2.54" y1="16.51" x2="10.16" y2="16.51" width="0.762" layer="1"/>
-<wire x1="10.16" y1="16.51" x2="12.78" y2="13.89" width="0.762" layer="1"/>
-<wire x1="12.78" y1="13.89" x2="34.14" y2="13.89" width="0.762" layer="1"/>
-<wire x1="38.735" y1="19.05" x2="38.735" y2="18.485" width="0.762" layer="1"/>
-<wire x1="38.735" y1="18.485" x2="34.14" y2="13.89" width="0.762" layer="1"/>
-<wire x1="38.735" y1="31.115" x2="38.735" y2="19.05" width="0.762" layer="1"/>
-<wire x1="33.02" y1="41.91" x2="32.385" y2="41.275" width="0.762" layer="1"/>
-<wire x1="38.735" y1="31.115" x2="32.385" y2="37.465" width="0.762" layer="1"/>
-<wire x1="32.385" y1="37.465" x2="32.385" y2="41.275" width="0.762" layer="1"/>
-<wire x1="35.56" y1="41.91" x2="33.655" y2="41.91" width="0.762" layer="1"/>
-<wire x1="32.385" y1="52.07" x2="32.385" y2="42.545" width="0.762" layer="1"/>
-<wire x1="32.385" y1="42.545" x2="32.385" y2="41.275" width="0.762" layer="1"/>
-<wire x1="35.56" y1="53.34" x2="33.655" y2="53.34" width="0.762" layer="1"/>
-<wire x1="33.655" y1="53.34" x2="32.385" y2="52.07" width="0.762" layer="1"/>
-<wire x1="33.655" y1="41.91" x2="33.02" y2="41.91" width="0.762" layer="1"/>
-<wire x1="33.02" y1="41.91" x2="32.385" y2="42.545" width="0.762" layer="1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="0" y="55.88"/>
+<vertex x="53.34" y="55.88"/>
+<vertex x="53.34" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
 </signal>
 <signal name="SW">
 <contactref element="S1" pad="1"/>
@@ -2560,203 +2488,6 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="19,1,e60c1d84f05db788"/>
-<approved hash="19,1,1a8bed1fcd8a6460"/>
-<approved hash="19,1,1fb1f53dd988676e"/>
-<approved hash="19,1,5f224302b7c07697"/>
-<approved hash="19,1,103be5afc1c26978"/>
-<approved hash="19,1,0bd0352f22844a2e"/>
-<approved hash="19,1,9eee5a29b2ceb444"/>
-<approved hash="19,1,efd2330fd640ba08"/>
-<approved hash="19,1,145ceca4c93767d2"/>
-<approved hash="19,1,14fcef24d7976130"/>
-<approved hash="19,1,0da6c27374157109"/>
-<approved hash="19,1,41b26e4f8b957ceb"/>
-<approved hash="19,1,e844eefccee3616e"/>
-<approved hash="19,1,c7a4b9179b098131"/>
-<approved hash="19,1,bb4a2f9d60de58e9"/>
-<approved hash="19,1,13fce29ccb536a50"/>
-<approved hash="19,1,88a8fa06bf45e63a"/>
-<approved hash="19,1,bc92fc2947faa559"/>
-<approved hash="19,1,3bb8300169716c14"/>
-<approved hash="19,1,2ab4eec4f5d76168"/>
-<approved hash="19,1,bd26ff964c23a3e5"/>
-<approved hash="19,1,94b6ec70badbe894"/>
-<approved hash="19,1,0eacf1bcd57b66ee"/>
-<approved hash="19,1,922cefb2b5d9ed62"/>
-<approved hash="19,1,37d83ac169396c34"/>
-<approved hash="19,1,7b271129a2ee5190"/>
-<approved hash="19,1,18cceca4cff76f00"/>
-<approved hash="19,1,f8961125fb2aab9c"/>
-<approved hash="19,1,74db0422b7455e0c"/>
-<approved hash="19,1,1e22ee4679b71757"/>
-<approved hash="19,1,9da6ff20ad93e374"/>
-<approved hash="19,1,7f5b37abb4845b18"/>
-<approved hash="19,1,65b73c649ebb5bec"/>
-<approved hash="19,1,21b37c95081f02f7"/>
-<approved hash="19,1,50de5609a26b790b"/>
-<approved hash="19,1,071eedfa854195b7"/>
-<approved hash="19,1,dec351c45f97fe09"/>
-<approved hash="19,1,b80aeb48587dd9c1"/>
-<approved hash="19,1,9f4ee691467a14a8"/>
-<approved hash="19,1,b8a6c5af76a8a8d5"/>
-<approved hash="19,1,a0d2d8bc6d41bed1"/>
-<approved hash="19,1,3b24122ef5969201"/>
-<approved hash="19,1,c2fd5776dc4e16f2"/>
-<approved hash="19,1,381e174ab0915bf7"/>
-<approved hash="19,1,057809a6916f63c3"/>
-<approved hash="19,1,989ce702b991e07a"/>
-<approved hash="19,1,03d012f68ccf5f1b"/>
-<approved hash="19,1,9a5cea82b319eae2"/>
-<approved hash="19,1,9f06e670bde3e2d4"/>
-<approved hash="19,1,023817668aef7803"/>
-<approved hash="19,1,f6243128cc81bba8"/>
-<approved hash="19,1,0e39f08dced863ba"/>
-<approved hash="19,1,1d59ec8c326190b2"/>
-<approved hash="19,1,95cce392bae1e3ca"/>
-<approved hash="19,1,0812355c5e9857ff"/>
-<approved hash="19,1,37f22a34615077bf"/>
-<approved hash="19,1,e1ac068eeee3bb3c"/>
-<approved hash="19,1,0985cdb2d3d24bfc"/>
-<approved hash="19,1,36f635bb6a416762"/>
-<approved hash="19,1,1d81ef7dc94068ae"/>
-<approved hash="3,1,f0c2f0c6f8c6f8c2"/>
-<approved hash="3,1,d0d2cccac4cad8d2"/>
-<approved hash="3,1,b1fab1e6a9e6a9fa"/>
-<approved hash="3,1,de12de0ad60ad612"/>
-<approved hash="3,1,f0c2f0c6f8c6f8c2"/>
-<approved hash="3,1,df24def4d6f4d724"/>
-<approved hash="3,1,d2d2c2cacacadad2"/>
-<approved hash="3,1,d0f2d0f6a8f6a8f2"/>
-<approved hash="3,1,da1cda0cd20cd21c"/>
-<approved hash="3,1,c800c800d000d000"/>
-<approved hash="3,1,f0c2f0c6f8c6f8c2"/>
-<approved hash="3,1,f0c2f0c6f8c6f8c2"/>
-<approved hash="3,1,d322dd0ad50adb22"/>
-<approved hash="3,1,d013dc0bd40bd813"/>
-<approved hash="3,1,c8c3cccbc4cbc0c3"/>
-<approved hash="3,1,d0f2d0f6a8f6a8f2"/>
-<approved hash="3,1,2e932e8b268b2693"/>
-<approved hash="3,1,a0dfbcd784d798df"/>
-<approved hash="3,1,b0f9b0f9a8f9a8f9"/>
-<approved hash="3,1,dea3decbd6cbd6a3"/>
-<approved hash="3,1,00c800d000d000c8"/>
-<approved hash="3,1,b0f9b0f9a8f9a8f9"/>
-<approved hash="3,1,1e9c229c229c1e9c"/>
-<approved hash="3,1,b1fab1e6a9e6a9fa"/>
-<approved hash="3,1,d013ec0be40bd813"/>
-<approved hash="3,1,b0f9b0f9a8f9a8f9"/>
-<approved hash="3,1,16aa12d212d216aa"/>
-<approved hash="3,1,c8c3cccbc4cbc0c3"/>
-<approved hash="3,1,1414141414141414"/>
-<approved hash="3,1,b1fab1e6a9e6a9fa"/>
-<approved hash="3,1,50fa50f968f968fa"/>
-<approved hash="3,1,d0d3dccbd4cbd8d3"/>
-<approved hash="3,1,b1fab1e6a9e6a9fa"/>
-<approved hash="3,1,f0c2f0c6f8c6f8c2"/>
-<approved hash="3,1,50fa50f968f968fa"/>
-<approved hash="3,1,b620b30a44ca41e0"/>
-<approved hash="3,1,1cda0cd20cd21cda"/>
-<approved hash="3,1,50fa50f968f968fa"/>
-<approved hash="3,1,50fa50f968f968fa"/>
-<approved hash="3,1,c2dfdec7c6c7dadf"/>
-<approved hash="3,1,d0f2d0f6a8f6a8f2"/>
-<approved hash="3,1,d7f1d7f197f197f1"/>
-<approved hash="3,1,e98aed96e596e18a"/>
-<approved hash="3,1,b1fab1e6a9e6a9fa"/>
-<approved hash="3,1,b0f9b0f9a8f9a8f9"/>
-<approved hash="3,1,b0f9b0f9a8f9a8f9"/>
-<approved hash="3,1,b0f9b0f9a8f9a8f9"/>
-<approved hash="3,1,cc0ecc06d406d40e"/>
-<approved hash="3,1,239a5395ab95db9a"/>
-<approved hash="3,1,a0dfacd794d798df"/>
-<approved hash="3,1,1d2a131213121d2a"/>
-<approved hash="3,1,d7f1d7f197f197f1"/>
-<approved hash="3,1,d7f1d7f197f197f1"/>
-<approved hash="3,1,112c10ec10ec112c"/>
-<approved hash="3,1,d7f1d7f197f197f1"/>
-<approved hash="3,1,1ed412d412d41ed4"/>
-<approved hash="3,1,152a14d214d2152a"/>
-<approved hash="3,1,d7f1d7f197f197f1"/>
-<approved hash="3,1,f0c2f0c6f8c6f8c2"/>
-<approved hash="3,1,c13ecf06d706d93e"/>
-<approved hash="5,1,0800e5acc7629c84"/>
-<approved hash="5,1,c70f5427900221b2"/>
-<approved hash="5,1,ad0d9311bb3a7479"/>
-<approved hash="5,1,b79292e7bc986602"/>
-<approved hash="5,1,72b96f8dc471634e"/>
-<approved hash="5,1,833b9f340b1fb56a"/>
-<approved hash="5,1,ace6edcea605125f"/>
-<approved hash="5,1,06d4eb76f9eb997a"/>
-<approved hash="5,1,f5996e94c2ffae02"/>
-<approved hash="19,1,31a902e943d2c2ca"/>
-<approved hash="19,1,5db516ae256bd1a2"/>
-<approved hash="19,1,a9a6289813097997"/>
-<approved hash="19,1,df84895cd04c6b70"/>
-<approved hash="19,1,b521192088a4223a"/>
-<approved hash="19,1,b2de6b302e00f3bb"/>
-<approved hash="19,1,b2930c554bd9a9ce"/>
-<approved hash="19,1,7b3f5e5892e507ee"/>
-<approved hash="19,1,cf769146a6d4001a"/>
-<approved hash="19,1,8b1cb5a9e6662058"/>
-<approved hash="19,1,840fa7266450062c"/>
-<approved hash="19,1,e354e0ad1ec913cd"/>
-<approved hash="19,1,a5c156e060ad2777"/>
-<approved hash="19,1,7797523864ab0316"/>
-<approved hash="19,1,8dcf78a45a980806"/>
-<approved hash="19,1,4eb05cc59eebd20c"/>
-<approved hash="19,1,31b269e1ba968734"/>
-<approved hash="19,1,7f5f6240471107fe"/>
-<approved hash="19,1,7b0f46064e6c06cc"/>
-<approved hash="19,1,8f8db745e171e038"/>
-<approved hash="19,1,8121feb2e4393997"/>
-<approved hash="19,1,5d824432828b4000"/>
-<approved hash="19,1,8a41fa96e25231c5"/>
-<approved hash="19,1,8b85e282c9033223"/>
-<approved hash="19,1,bcd9b216935235c1"/>
-<approved hash="19,1,68bc27bab0bd2fba"/>
-<approved hash="19,1,d0559795c2657c5a"/>
-<approved hash="19,1,053818e7239811aa"/>
-<approved hash="19,1,55b07bc952986cab"/>
-<approved hash="19,1,4c4f481e9e59c23d"/>
-<approved hash="19,1,cc95f9041d9b5ee1"/>
-<approved hash="19,1,f3da3cfa603d5868"/>
-<approved hash="19,1,3ad7143817380281"/>
-<approved hash="19,1,d664f5ed02d7a2c9"/>
-<approved hash="19,1,8871ed95d0f19232"/>
-<approved hash="19,1,84c7b5321e6eee02"/>
-<approved hash="19,1,94ab8a60344daa6d"/>
-<approved hash="19,1,b6829a58c4dcf327"/>
-<approved hash="19,1,8a3db435d7a5e9d0"/>
-<approved hash="19,1,886fb60b9824e39a"/>
-<approved hash="19,1,ddc846ee7ea7c0ef"/>
-<approved hash="19,1,289933f198e76e91"/>
-<approved hash="19,1,5653f027a57249a2"/>
-<approved hash="19,1,c4c799a7ddd07067"/>
-<approved hash="19,1,b7124f8b186ade27"/>
-<approved hash="19,1,eec1c3394353ac07"/>
-<approved hash="19,1,36c546b2305d3cf3"/>
-<approved hash="19,1,ddfbba5ee715ac50"/>
-<approved hash="19,1,855df756f9f03b0d"/>
-<approved hash="19,1,131d636a5b291ae3"/>
-<approved hash="19,1,9167f55292f1f894"/>
-<approved hash="19,1,20ecd545ab1e884c"/>
-<approved hash="19,1,e2113c0203e511ad"/>
-<approved hash="19,1,e3ddb215dd585abd"/>
-<approved hash="19,1,b8d5bd2b4a2ba801"/>
-<approved hash="19,1,9bde64c553d01447"/>
-<approved hash="19,1,b73e506b1536cab3"/>
-<approved hash="19,1,9f9fb35b2681affb"/>
-<approved hash="19,1,1ffdff3d1cc57d0e"/>
-<approved hash="19,1,ba905aa712f6c495"/>
-<approved hash="19,1,e1dcc7b05084a4d9"/>
-<approved hash="19,1,af665ccb17e6dc03"/>
-<approved hash="19,1,cb7be2377045a743"/>
-<approved hash="19,1,619c2b10a5322624"/>
-<approved hash="3,1,b07bb007b807b87b"/>
-<approved hash="3,1,caa1cd25d525d2a1"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
